@@ -632,18 +632,87 @@ pip install psutil
 '''Ejercicio 81
 Elevar al cuadrado una lista de nuemeros utilizando map()
 '''
-import random
-listaNumeros = []
-def crearLista():
-    for i in range(1,21):
-        x = random.randint(1,50)
-        listaNumeros.append(x)
-    print(listaNumeros)
-crearLista()
+# import random
+# listaNumeros = []
+# def crearLista():
+#     for i in range(1,21):
+#         x = random.randint(1,50)
+#         listaNumeros.append(x)
+#     print(listaNumeros)
+# crearLista()
 
-def calcularCuadrado():
-    def cuadrado(x):
-        return x ** 2
-    cuadrados = list(map(cuadrado,listaNumeros))
-    print(cuadrados)
-calcularCuadrado()
+# def calcularCuadrado():
+#     def cuadrado(x):
+#         return x ** 2
+#     cuadrados = list(map(cuadrado,listaNumeros))
+#     print(cuadrados)
+# calcularCuadrado()
+
+'''Ejercicio 82
+Convertir una lista de cadenas que sean números a enteros utilizando map()
+'''
+# def convertir(elemento):
+#     return int(elemento)
+
+# cadena = ['1','2','3','4']
+
+# nuevaCadena = list(map(convertir, cadena))
+# print(nuevaCadena)
+
+'''Ejercicio 83
+Calcular la longitud que tiene cada palabra dentro de una lista de palabras utilizando map
+'''
+# palabra = ['HOla', 'gato', 'perro']
+
+# def calLong(e):
+#     return len(e)
+# longitud = list(map(calLong, palabra))
+# print(longitud)
+
+'''Ejercicio 84
+Obtener el cuadrado de la suma de dos listas de números utilizando map
+'''
+#import random
+
+# lista1 = []
+# lista2 = []
+
+# def agregarNum(x):
+#     for i in range(1,11):
+#         aleatorio = random.randint(1,100)
+#         x.append(aleatorio)
+
+# agregarNum(lista1)
+# agregarNum(lista2)
+
+# print(lista1)
+# print(lista2)
+
+#Opción laaaaaaaaarga
+# x=0
+# suma = []
+# for i in lista1:
+#     suma.append(lista1[x] + lista2[x])
+#     x += 1
+
+# print('La suma es: ',suma)
+# x=0
+# cuadrado = []
+# for i in suma:
+#     cuadrado.append(suma[x]** 2)
+#     x += 1
+
+# print('El cuadrado es: ',cuadrado)
+
+#Opción corta
+# def suma_cuadrado(a,b):
+#     return (a + b) ** 2
+
+# resultado = list(map(suma_cuadrado,lista1,lista2))
+# print('El resultado más fácil y corto: ',resultado)
+
+'''Ejercicio 85
+Contar el número de vocales en una lista de palabras utilizando map
+'''
+palabras = ['Hola que hace mi gente. Hoy vamos a aplicar lo aprendido']
+separado = palabras
