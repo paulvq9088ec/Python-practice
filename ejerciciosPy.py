@@ -714,5 +714,68 @@ Obtener el cuadrado de la suma de dos listas de números utilizando map
 '''Ejercicio 85
 Contar el número de vocales en una lista de palabras utilizando map
 '''
-palabras = ['Hola que hace mi gente. Hoy vamos a aplicar lo aprendido']
-separado = palabras
+#palabras = ['Hola que hace mi gente. Hoy vamos a aplicar lo aprendido']
+#separado = palabras
+
+# def contar(palabra):
+#     return sum(1 for letra in palabra if letra.lower() in 'aeiou')
+
+#palabras = ['paranguricutirimicuaro', 'esternocleidomastoideos','veintimilla']
+# conteo = list(map(contar, palabras))
+# print(conteo)
+
+# conteo = list(map(lambda palabra : sum(1 for letra in palabra if letra.lower() in 'aeiou'), palabras))
+# print(conteo)
+
+'''Ejericio 86
+Elevar un número al cuadrado utilizando lambda
+'''
+# cuadrado = lambda x : x ** 2
+# print(cuadrado(5))
+
+'''Ejercicio 87
+Sumar dos número utilizando lambda
+'''
+# suma = lambda x,y : x + y
+# print(suma(5,8))
+
+'''Ejercicio 88
+Verificar si un número es par usando lambda
+'''
+# verificar = lambda x: x % 2 == 0
+# print(verificar(1097))
+
+'''Ejercicio 89
+Comprobar si una palabra es palíndromo usando lambda
+'''
+# palindromo = lambda palabra : palabra == palabra[::-1]
+# print(palindromo('radar'))
+# print(palindromo('iluminati'))
+
+'''Ejercicio 90
+Duplicar cada elemento de una lista usando map y lambda
+'''
+# import random
+
+# listaNum = []
+# for x in range(1,6):
+#     num = random.randint(1,100)
+#     listaNum.append(num)
+# print(listaNum)
+
+# duplicado = list(map(lambda num : num * 2, listaNum))
+# print(duplicado)
+
+'''Ejercicio 91
+Filtrar números pares de una lista utilizando filter
+'''
+import random
+listaNum = []
+
+for x in range(1,11):
+    num = random.randint(1,100)
+    listaNum.append(num)
+print(listaNum)
+
+pares = list(filter(lambda x : x%2 == 0, listaNum))
+print(pares)
